@@ -11,7 +11,7 @@ class AuthorController extends Controller
     public function store()
     {
         Author::create(request()->only([
-            'name', 'dob',
+            'name', 'dob', 'author'
         ]));
     }
 
